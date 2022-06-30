@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(214, 214, 214);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 0;
+
+}
+
+h1 {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border: 3px solid rgb(192, 192, 192);
+}
+
+.message {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 18px;
+
+}
+
+#pic {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+/* using ul after .navi class wil select even the bullet point from ul to be removed by list-style none */
+
+.navi ul {
+    border: 1px solid grey;
+    text-align: center;
+    background-color: grey;
+    list-style-type: none;
+    
+}
+
+.navi li {
+    display: inline-block;
+    margin-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+
+    position: relative;
+
+}
+
+.navi a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.navi a:hover {
+    color: white;
+    
+}
+
+.navi a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: rgb(0, 2, 2);
+
+    position: absolute;
+    top: 0%;
+    width: 0%;
+
+    transition: all ease-in-out 200ms;
+}
+
+.navi a:hover::before {
+    width: 100%;
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+a:visited {
+    text-decoration: none;
+}
