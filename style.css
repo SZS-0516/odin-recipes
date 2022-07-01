@@ -27,6 +27,7 @@ h1 {
     height: 600px;
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 /* using ul after .navi class wil select even the bullet point from ul to be removed by list-style none */
